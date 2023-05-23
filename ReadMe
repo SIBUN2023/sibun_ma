@@ -1,5 +1,7 @@
 npm install --global yarn
 npm install --global expo-cli
+npm install --save-dev babel-eslint eslint-config-standard eslint-config-standard-jsx eslint-config-standard-react eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-react
+
 expo init sibun-ma
 
 yarn start
