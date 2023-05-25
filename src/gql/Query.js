@@ -27,10 +27,10 @@ mutation ($torneoInterno: TorneosInternosInput!) {
     nombre
   }
 }
-`
+`;
+
 export const DELETE_TORNEO_INTERNO = gql`
 mutation ($_id: String!) {
   deleteTorneoInterno(_id: $_id)
 }
-`
-;
+`;
