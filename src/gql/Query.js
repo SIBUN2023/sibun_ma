@@ -1,9 +1,23 @@
 import { gql } from "@apollo/client";
 
-export const MODALIDADES_QUERY = gql`
-  query{
-    allTorneosInternos{
-      _id
+export const GetAllModalidades = gql`
+  query {
+  allModalidades {
+    id
+    modalidad_id
+    modalidad_nombre
+    modalidad_estado
+    }
+  }
+`;
+
+export const GetModalidadById = gql`
+  query GetModalidadById($id: Int!) {
+    modalidadById(id: $id) {
+      id
+      modalidad_id
+      modalidad_nombre
+      modalidad_estado
     }
   }
 `;

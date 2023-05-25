@@ -4,10 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from '../HomeScreen.js';
 import TorneosList from "./TorneosList.jsx";
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import ModalidadesList from "./ModalidadesList.jsx";
 
 // Initialize Apollo Client
 const client = new ApolloClient({
-    uri: 'http://192.168.0.3:5000/graphql',
+    uri: 'http://192.168.0.9:5000/graphql',
     cache: new InMemoryCache()
 });
 
@@ -21,7 +22,7 @@ const Main = () => {
         }}>
         <View style={styles.container}>
             <Text style={styles.title}>SIBUN</Text>
-            <TorneosList />
+            <ModalidadesList />
         </View>
         </View>
         </ApolloProvider>
