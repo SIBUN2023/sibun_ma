@@ -5,7 +5,7 @@ import { FlatList } from "react-native-web";
 
 const ModalidadesList = () => {
     return(
-        <FlatList
+        <FlatList>
             data={modalidades}
             renderItem={({item: mod}) => (
                 <View key={mod.id}>
@@ -17,7 +17,7 @@ const ModalidadesList = () => {
                     <Text>Estado: {mod.modalidad_estado}</Text>
                 </View>
             )}
-        />
+        </FlatList>
     );
 }
 

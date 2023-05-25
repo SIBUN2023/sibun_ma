@@ -46,5 +46,11 @@ export default [
         modalidad_id: "32484232", 
         modalidad_nombre: "awa", 
         modalidad_estado: 4549
+    },
+    {
+        id:9,
+        modalidad_id: "32484233", 
+        modalidad_nombre: "awa", 
+        modalidad_estado: 4549
     }
 ]

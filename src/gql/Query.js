@@ -1,12 +1,22 @@
 import { gql } from "@apollo/client";
 
 export const MODALIDADES_QUERY = gql`
-  query {
-  allModalidades {
-    id
-    modalidad_id
-    modalidad_nombre
-    modalidad_estado
+  query{
+    allTorneosInternos{
+      _id
+    }
+  }
+`;
+
+export const GetAllTorneosInternos = gql`
+query {
+    allTorneosInternos {
+      _id
+      nombre
+      periodo
+      tipo
+      rama
+      estado
     }
   }
 `;
